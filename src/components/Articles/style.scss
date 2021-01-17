@@ -1,0 +1,49 @@
+@use 'sass:color';
+@use 'src/styles/vars';
+
+.article {
+  
+  @include vars.mq {
+    margin-bottom: 3em;
+    width: 50%;
+  }
+  &-h2 {
+    font-family: vars.$title-font;
+    font-weight: vars.$title-font-weight;
+    color: vars.$title-color;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+  }
+  &:hover {
+    background-color: vars.$post-hover-color
+  }
+  &-p1 {
+    background-color: vars.$primary-color;
+    color: vars.$light-color;
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.8em;
+  }
+}
+.mainarticle {
+  width: 96%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  @include vars.mq {
+    &-list {
+    display: flex;
+    flex-wrap: wrap;
+    }
+  }
+}
+.mainarticle-list--zen {
+  .article{
+    width: 100%;
+    padding: vars.$gutter;
+    font-size: 1.2em;
+  }
+}

@@ -17,3 +17,9 @@ $title-color: #000;
 // Post
 $post-text-color: #666;
 $post-hover-color: #f7f7f7;
+
+@mixin mq {
+  @media (min-width: 600px) {
+    @content;
+  }
+}

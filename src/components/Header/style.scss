@@ -1,0 +1,33 @@
+@use 'sass:color';
+@use 'src/styles/vars';
+
+.header {
+  text-align: center;
+  border-bottom: 1px solid vars.$alt-color;
+  border-top: 1px solid vars.$alt-color;
+  padding: vars.$gutter;
+  margin-top: vars.$gutter/2;
+
+  &-li {
+    display: inline;
+    margin: 0 vars.$gutter/2;
+    color: vars.$dark-color;
+
+    &:hover, &--active{
+      cursor: pointer;
+      color: vars.$primary-color ;
+    }
+  }
+}
+
+.button {
+  background-color: aqua;
+  border: none;
+  border-radius: 5px;
+  color: white;
+
+  &:hover {
+    color: violet;
+  }
+}
+

@@ -1,0 +1,9 @@
+@use 'sass:color';
+@use 'src/styles/vars';
+
+.footer {
+  text-align: center;
+  background-color: vars.$dark-color;
+  color: vars.$alt-color;
+  padding: vars.$gutter*2 0;
+}
